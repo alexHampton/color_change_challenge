@@ -3,7 +3,7 @@ import "./ColorInput.css"
 
 const ColorInput = ({ setColor }) => {
   return (
-    <input className='ColorInput' type="text" onChange={(e) => setColor(e.target.value)} />
+    <input className='ColorInput' type="text" placeholder='Add color name' onChange={(e) => setColor(e.target.value)} />
   )
 }
 

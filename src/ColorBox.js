@@ -4,7 +4,8 @@ import "./ColorBox.css"
 const ColorBox = ({ color }) => {
   return (
     <div className="ColorBox" style={{backgroundColor: color}}>
-        <div>{color}</div>
+        {color ? <div>{color}</div> 
+               : <div>Empty Value</div>}
     </div>
   )
 }
